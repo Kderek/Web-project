@@ -1,0 +1,90 @@
+body{
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+ h1, h2, h4, h5, h6 {
+   font-family: 'Roboto Slab', serif;
+   color: white;
+ }
+
+
+
+.hero-section > .bottom-heading h3 {
+    font-family: 'Roboto Slab', serif;
+    color: black;
+}
+
+.header {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.header > .header-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: brightness(70%);
+}
+
+.header > .header-wraper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.header > .header-wraper > .header-content{
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > .header-wraper > .header-content > .dropdown > .link {
+  margin-left: -800px;
+}
+
+.header > .header-wraper > .header-content > .banner-image {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-left: -200px;
+}
+
+.header > .header-wraper > .header-content > .banner-image  img {
+  display: flex;
+ width: 200px;
+ height:100%;
+
+}
+
+.header > .header-wraper > .header-content > .heading-wraper{
+  cursor: pointer;
+  color: white;
+  border-radius: 7px;
+  box-shadow: inset 0px -26px 76px 4px rgba(0, 0, 0, 0.58);
+}
+
+.header > .header-wraper > .header-content > .heading-wraper a {
+  text-decoration: none;
+}
+
+.header > .header-wraper > .header-content > .dropdown > .checkbtn {
+
+    font-size: 30px;
+    color: white;
+    float: left;
+    line-height: 60px;
+    cursor: pointer;
+    margin-left: -30px;
+    margin-top: -120px;
+
+    position: absolute;
+}

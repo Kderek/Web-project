@@ -1,0 +1,53 @@
+input[type=radio] {
+  width: 80px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=number] {
+  width: 80px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=range]{
+  width: 500px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+button[type=reset] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: pink;
+  cursor: pointer;
+}
+button[type=reset] {
+  background-color: #cbcbcb;
+  outline: none;
+  transition: 0.5s;
+}
+
+button[type=reset]:hover {
+  background: pink;
+}
+
+button[type=submit] {
+  margin-bottom: 60px;
+}
+
+.invalidInput {
+    color: red;
+}

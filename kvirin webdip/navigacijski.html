@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Navigacijski </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kvirin Đerek" />
+    <meta name="datetime" content="02.06.2022.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/551aba8a7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/era.css">
+  </head>
+  <body>
+
+    <div class="sve">
+      <div class="header">
+        <div class="header-bg" style="background-image:url('materijali/14174.jpg');"></div>
+        <div class="header-wraper">
+          <div class="header-content">
+            <div class="banner-image">
+                <a href="index.html">
+                <img src="materijali/RPC-JP_Logo.png" alt="Logo"></a>
+            </div>
+            <div class="heading-wraper">
+            <a href="navigacijski.html"><h1>Navigacijski</h1></a>
+            </div>
+            <div class="dropdown">
+                <input type="checkbox" id="check">
+                <div class="link">
+                  <div class="nav-link">
+                    <a href="index.html">Početna</a>
+                  </div>
+                    <div class="nav-link">
+                      <a href="obrasci/prijava.html">Prijava</a>
+                    </div>
+                    <div class="nav-link">
+                      <a href="obrasci/registracija.html">Registracija</a>
+                    </div>
+                    <div class="nav-link">
+                      <a href="obrasci/obrazac.html">Obrazac</a>
+                    </div>
+                    <div class="nav-link">
+                      <a href="multimedija.html">Multimedija</a>
+                    </div>
+                    <div class="nav-link">
+                      <a href="popis.html">Popis</a>
+                    </div>
+                    <div class="nav-link">
+                      <a href="era.html">ERA</a>
+                    </div>
+                  </div>
+                <label for="check" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+                </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+      <div class="naslov">
+        <h1>Galerija navigacijskih tokova</h1>
+      </div>
+      <div class="slika-1">
+        <img id="myImg" src="materijali/ne-registrirani.jpeg" alt="ne-registrirani" height="200" width="200">
+        <img id="myImg" src="materijali/registrirani.jpeg" alt="registrirani" height="200" width="200">
+        <img id="myImg" src="materijali/moderator.jpeg" alt="moderator" height="200" width="200">
+        <img id="myImg" src="materijali/administrator.jpeg" alt="administrator" height="200" width="200">
+        <div id="myModal" class="modal">
+           <img class="modal-content" id="img01">
+          <div id="caption"></div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            modal.onclick = function() {
+                img01.className += " out";
+                setTimeout(function() {
+                   modal.style.display = "none";
+                   img01.className = "modal-content";
+                 }, 400);
+
+             }
+
+            </script>
+      </div>
+      </div>
+      </div>
+      <div class="footer">
+        <div class="logo-footer">
+            <img src="materijali/RPC-JP_Logo.png" alt="Logo">
+        </div>
+        <div class="footer-phone-hours">
+          <span class="phone">
+            555 555 5555
+          </span>
+          <span class="hours">
+            10am - 12pm
+          </span>
+        </div>
+        <div class="link">
+          <div class="nav-link">
+            <a href="obrasci/Prijava.html">Prijava</a>
+          </div>
+          <div class="nav-link">
+            <a href="obrasci/registracija.html">Registracija</a>
+          </div>
+          <div class="nav-link">
+            <a href="obrasci/obrazac.html">Obrazac</a>
+          </div>
+          <div class="nav-link">
+            <a href="multimedija.html">Multimedija</a>
+          </div>
+      </div>
+      <div class="social-media-icon">
+        <a href="https://instagram.com/kvirko_svemirko"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <div class="ikone-podnozje">
+        <div class="HTML5-validator">
+          <a href="https://validator.w3.org/nu/?doc=https://barka.foi.hr/WebDiP/2021/zadaca_01/kderek/popis.html" target="_blank"><img src="https://barka.foi.hr/WebDiP/2020/materijali/zadace/HTML5.png" alt="HTML5"></a>
+        </div>
+        <div class="CSS-validator">
+          <a href='http://jigsaw.w3.org/css-validator/validator?uri=https://barka.foi.hr/WebDiP/2021/zadaca_01/kderek/popis.html' target="_blank"><img src="materijali/CSS3.png" alt="HTML5"></a>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2022  &#124; <a href="mailto:someone@yoursite.com">Kvirin Đerek</a>
+      </div>
+      </div>
+    </body>
+    </html>

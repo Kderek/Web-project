@@ -1,0 +1,220 @@
+body{
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+/*nav*/
+.navigacija-sve {
+    height: 180px;
+    background-color: #11122b;
+    color: #cbcbcb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+}
+
+/*left column*/
+.navigacija-sve > .left-column{
+    display: flex;
+    align-items: center;
+}
+
+.navigacija-sve > .left-column > .ikona {
+  margin-right: 15px;
+}
+.navigacija-sve > .left-column >.ikona i {
+  font-size: 2em;
+}
+
+.navigacija-sve > .left-column > .kontakt-sati{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.link > .nav-link a {
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  font-size: 0.8em
+}
+
+
+.navigacija-sve > .left-column > .kontakt-sati> .sati{
+    font-family: 'Ubuntu', sans-serif;
+    color: #858585;
+    font-size: 0.8em;
+}
+
+/*Center column*/
+.navigacija-sve > .center-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 42px;
+  width: 500px;
+}
+.navigacija-sve > .center-column > .banner-image {
+  display: flex;
+  justify-content: center;
+}
+.navigacija-sve > .center-column > .banner-image img {
+  width: 200px;
+  height: 100%;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link > .nav-link {
+  width: 90px;
+  text-align: center;
+}
+
+.link > .nav-link a{
+  font-family: "Ubuntu Condensed", sans-serif;
+  color: #cbcbcb;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.link > .nav-link a:hover {
+  color: purple;
+  letter-spacing: 1.5px;
+}
+/*Right coulmn*/
+.navigacija-sve > .right-column {
+    display: flex;
+    align-items: center;
+}
+.navigacija-sve > .right-column> .adresa {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: right;
+}
+.navigacija-sve > .right-column > .adresa a {
+  color: #858585;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: 0.5s;
+}
+
+.navigacija-sve > .right-column > .adresa a:hover {
+  color: purple;
+  }
+
+.navigacija-sve > .right-column > .contact-icon {
+    margin-left: 15px;
+    font-size: 2em;
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+
+.navigacija-sve > .right-column > .contact-icon a {
+  color: #cbcbcb;
+  transition: 0.5s;
+}
+
+.navigacija-sve > .right-column > .contact-icon a:hover {
+  color: purple;
+}
+
+.navigacija-sve > .center-column > .link > .drop-down {
+  font-size: 1.3em;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: purple;
+  color: white;
+  padding: 12px;
+  width: 45px;
+  font-size: 16px;
+  border: none;
+  transition: 0.5s;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: pink;}
+
+.ikone-podnozje {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 20%;
+}
+
+.ikone-podnozje > .CSS-validator img {
+  width: 15%;
+}
+
+.ikone-podnozje > .HTML5-validator img {
+  width: 20%;
+}
+
+@media (min-width:390px) and (max-width: 500px){
+  #box1{
+    background-color: white;
+    font-style: italic;
+  }
+}
+
+@media (min-height:844px) and (max-height: 900px){
+  #box1{
+    background-color: white;
+    font-style: italic;
+  }
+}
+
+@media (min-width:501px) and (max-width: 820px){
+  #box1{
+    background-color: blue;
+  }
+}
+
+@media (min-height:901px) and (max-height: 1180px){
+  #box1{
+    background-color: blue;
+  }
+}
+
+@media (min-width: 821px){
+  #box1{
+    background-color: #11122b;
+  }
+}
+
+@media (min-height:1181px){
+  #box1{
+    background-color: #11122b;
+  }
+}

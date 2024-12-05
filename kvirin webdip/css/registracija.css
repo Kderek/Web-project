@@ -1,0 +1,130 @@
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=date], input[type=file], textarea, input[type=number], input[type=datetime-local] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+
+input[type=text]:focus, input[type=password]:focus,input[type=date], input[type=file], textarea, input[type=number], input[type=datetime-local],input[type=radio] {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: purple;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.sve > .obrazac-sve > .container > .ime-prezime input:focus {
+  background: yellow;
+  color: red;
+}
+
+.sve > .obrazac-sve{
+  z-index: 1000;
+  position: relative;
+  bottom: 15px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.wrap {
+  position: absolute;
+
+  left: 30px;
+  background: #F8F8F8 ;
+  max-width: 365px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 25px 25px 30px 25px;
+}
+
+.wrap img {
+  max-width: 90px;
+}
+
+.wrap i {
+  font-size: 4em;
+  font-weight: 900;
+  color: white;
+}
+
+.wrap > .con {
+  margin-top: 10px;
+}
+
+.con header {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.con p{
+  color: #858585;
+  margin: 5px 0 20px 0;
+}
+
+.con > .butn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.butn button {
+  padding: 10px 20px;
+  background: purple;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.butn a {
+  color: pink;
+}

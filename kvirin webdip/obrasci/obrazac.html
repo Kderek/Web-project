@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title> Obrazac </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kvirin Đerek" />
+    <meta name="datetime" content="02.06.2022.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/551aba8a7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/registracija.css">
+    <link rel="stylesheet" href="../css/obrazac.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-bg" style="background-image:url('../materijali/14174.jpg');"></div>
+        <div class="header-wraper">
+            <div class="header-content">
+                <div class="banner-image">
+                    <a href="../index.html">
+                        <img src="../materijali/RPC-JP_Logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="heading-wraper">
+                    <a href="obrazac.html"><h1>Obrazac</h1></a>
+                </div>
+                <div class="dropdown">
+                    <input type="checkbox" id="check">
+                    <div class="link">
+                        <div class="nav-link">
+                            <a href="../index.html">Početna</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="prijava.html">Prijava</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="registracija.html">Registracija</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="../multimedija.html">Multimedija</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="../popis.html">Popis</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="../navigacijski.html">Navigacijski</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="../era.html">ERA</a>
+                        </div>
+                    </div>
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    Vrijeme popunjavanja:
+    <div id="countdown">00:00</div>
+    <div class="obrazac-sve">
+        <form class="Obrazac" id="obrazac" action="http://barka.foi.hr/WebDiP/2021/materijali/zadace/ispis_forme.php" method="post">
+            <div class="container">
+
+                <p>Molimo, ispunite obrazac kako bih ste dodali novi sadržaj.</p>
+                <hr>
+                <legend>Podatci o dokumentu</legend>
+                <div class="id">
+                    <label for="id"><b>ID</b></label>
+                    <input type="number" placeholder="1" name="id" id="id" disabled>
+                </div>
+
+                <label id="myfile_label" for="myfile">Naziv datoteke:</label>
+                <input type="file" id="myfile" name="myfile">
+
+                <div class="checkbox">
+                    <label for="kategorije">Izaberite kategoriju:</label>
+                    <div>
+                        <label for="kategorije">Review:</label>
+                        <input type="checkbox" name="Review" value="1">
+                    </div>
+                    <div>
+                        <label for="kategorije">Iskustvo:</label>
+                        <input type="checkbox" name="Iskustvo" value="1">
+                    </div>
+                    <div>
+                        <label for="kategorije">Novosti:</label>
+                        <input type="checkbox" name="Novosti" value="1">
+                    </div>
+                    <div<label for="kategorije">Gaming:</label>
+          <input type="checkbox" name="Gaming" value="1"></div>
+                </div>
+
+
+                <div class="datum-vrijeme">
+                    <label id="dat_label" for="dat"><b>Datum i vrijeme kreiranja</b></label>
+                    <input type="text" placeholder="dd.mm.gggg. hh:mm:ss" name="dat" id="dat">
+                </div>
+
+                <div>
+                    <label id="description_label" for="opis">Opis</label>
+                    <textarea id="opis" name="opis" rows="5" cols="60" placeholder="Unesite opis..."></textarea>
+                </div>
+                <legend>Korisničko iskustvo</legend>
+                <p>Način kontaktiranja:</p>
+                <div>
+                    <input type="radio" id="contactChoice1"
+                           name="contact" value="email">
+                    <label for="contactChoice1">Email</label>
+
+                    <input type="radio" id="contactChoice2"
+                           name="contact" value="phone">
+                    <label for="contactChoice2">Mobitel</label>
+
+                    <input type="radio" id="contactChoice3"
+                           name="contact" value="mail">
+                    <label for="contactChoice3">SMS</label>
+                </div>
+
+                <div class="skriven">
+                    <input type="hidden" id="postId" name="postId" value="1000000">
+                </div>
+
+                <p>Korisničko iskustvo:</p>
+
+                <div>
+                    <label for="volume">Ne zadovoljan</label>
+                    <input type="range" list="tickmarks">
+                    <label for="volume">Zadovoljan</label>
+                    <datalist id="tickmarks">
+                        <option value="0" label="0%"></option>
+                        <option value="10"></option>
+                        <option value="20"></option>
+                        <option value="30"></option>
+                        <option value="40"></option>
+                        <option value="50" label="50%"></option>
+                        <option value="60"></option>
+                        <option value="70"></option>
+                        <option value="80"></option>
+                        <option value="90"></option>
+                        <option value="100" label="100%"></option>
+                    </datalist>
+
+                </div>
+                <div class="ocijena-proizvoda">
+                    <label for="ocijena">Ocijena proizvoda (1-10):</label>
+
+                    <input type="number" id="ocijena" name="ocijena"
+                           min="1" max="10">
+                </div>
+
+                <button type="reset" class="resetbtn">Ponovi upis</button>
+                <button type="submit" class="registerbtn">Potvrdi</button>
+
+
+            </div>
+            <hr>
+
+
+
+    </div>
+    </div>
+    </form>
+    <div class="footer">
+        <div class="logo-footer">
+            <img src="../materijali/RPC-JP_Logo.png" alt="Logo">
+        </div>
+        <div class="footer-phone-hours">
+            <span class="phone">
+                555 555 5555
+            </span>
+            <span class="hours">
+                10am - 12pm?
+            </span>
+        </div>
+        <div class="link">
+            <div class="nav-link">
+                <a href="../index.html">Početna</a>
+            </div>
+            <div class="nav-link">
+                <a href="Prijava.html">Prijava</a>
+            </div>
+            <div class="nav-link">
+                <a href="registracija.html">Registracija</a>
+            </div>
+            <div class="nav-link">
+                <a href="../multimedija.html">Multimedija</a>
+            </div>
+            <div class="nav-link">
+                <a href="../popis.html">Popis</a>
+            </div>
+        </div>
+        <div class="social-media-icon">
+            <a href="https://instagram.com/kvirko_svemirko"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="ikone-podnozje">
+            <div class="HTML5-validator">
+                <a href="https://validator.w3.org/nu/?doc=https://barka.foi.hr/WebDiP/2021/zadaca_01/kderek/obrasci/obrazac.html" target="_blank"><img src="https://barka.foi.hr/WebDiP/2020/materijali/zadace/HTML5.png" alt="HTML5"></a>
+            </div>
+            <div class="CSS-validator">
+                <a href='http://jigsaw.w3.org/css-validator/validator?uri=https://barka.foi.hr/WebDiP/2021/zadaca_01/kderek/obrasci/obrazac.html' target="_blank"><img src="https://barka.foi.hr/WebDiP/2020/materijali/zadace/CSS3.png" alt="HTML5"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2022  &#124; <a href="mailto:someone@yoursite.com">Kvirin Đerek</a>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../korime.js"></script>

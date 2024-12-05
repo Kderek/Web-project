@@ -1,0 +1,138 @@
+* {
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    /*background-color: #bd0a28;*/
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    padding-left: 100px;
+    background: url('../materijali/foi-logo.jpg') no-repeat;
+    background-color: #bd0a28;
+    background-size: contain;
+    font-weight: bold;
+    color: #fff;
+}
+
+h1, footer {
+    text-align: center;
+}
+
+li {
+    color: black;
+}
+
+.clanci{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/*-------------------------------------*/
+nav {
+    width: 20%;
+    float: left;
+    display: none;
+}
+
+nav > ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+nav > ul li {
+
+    list-style-type: none;
+}
+
+nav > ul > li > a {
+    display: block;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: black;
+    color: #e4433c;
+    background-color: #eaeaea;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 2px;
+    text-decoration: none;
+  }
+#vrh:target > nav {
+    display: block;
+}
+
+nav > ul li a:hover {
+    color: #fff;
+    background: #f23f37;
+}
+
+.oautoru {
+    font-style: italic;
+}
+
+#sadrzaj {
+    background-color: #eaeaea;
+    color: black;
+    font-size: 25px;
+   /*margin-top: 20px;*/
+    margin-bottom: 20px;
+    width: 70%;
+    float: left;
+    min-height: 1200px;
+}
+#animacija {
+    width: 50px;
+    height: 50px;
+}
+
+#animacija img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: naziv 20s infinite;
+    opacity: 0;
+}
+
+@keyframes naziv {
+    25%{opacity: 1;}
+    40%{opacity: 0;}
+}
+
+#animacija img:nth-child(2){animation-delay: 0s;}
+#animacija img:nth-child(1){animation-delay: 5s;}
+footer {
+    background-color: #bd0a28;
+    clear: both;
+}
+
+@media only screen and (min-width: 390px) and (max-width: 500px) {
+
+    body {
+   /*     background-color: yellow; */
+    }
+
+    nav {
+        width: 100%;
+       clear: both;
+    }
+
+    #sadrzaj {
+        clear: both;
+        width: 100%;
+    }
+}
+
+.demo  {
+    position: fixed;
+    top: 10%;
+    left: 20%;
+}

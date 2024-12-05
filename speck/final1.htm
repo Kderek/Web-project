@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Speck</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<h1>My technologies</h1>
+	<div class="input-container">
+		<div class="input">
+		<input type="text" id="myInput" placeholder="Enter new technology..." onkeyup="addItemOnEnter(event)">
+		<button onclick="addItem()">Add</button>
+		</div>	
+		<button class="link-button" onclick="removeAll()">Remove All</button>
+	</div>
+	<ul id="myList"></ul>
+
+	<script src="./skripta.js"></script>
+</body>
+</html>

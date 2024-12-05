@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title> Multimedija </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kvirin Đerek" />
+    <meta name="datetime" content="02.06.2022.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/551aba8a7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/multimedija.css">
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+    <div class="sve">
+        <div class="header">
+            <div class="header-bg" style="background-image:url('materijali/14174.jpg');"></div>
+            <div class="header-wraper">
+                <div class="header-content">
+                    <div class="banner-image">
+                        <a href="index.html">
+                            <img src="materijali/RPC-JP_Logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="heading-wraper">
+                        <input type="checkbox" id="toggle">
+                        <a href="multimedija.html"> <h1>Multimedija</h1> </a>
+                    </div>
+                    <div class="dropdown">
+                        <input type="checkbox" id="check">
+                        <div class="link">
+                            <div class="nav-link">
+                                <a href="index.html">Početna</a>
+                            </div>
+                            <div class="nav-link">
+                                <a href="obrasci/prijava.html">Prijava</a>
+                            </div>
+                            <div class="nav-link">
+                                <a href="obrasci/registracija.html">Registracija</a>
+                            </div>
+                            <div class="nav-link">
+                                <a href="obrasci/obrazac.html">Obrazac</a>
+                            </div>
+                            <div class="nav-link">
+                                <a href="popis.html">Popis</a>
+                            </div>
+                            <div class="nav-link">
+                                <a href="navigacijski.html">Navigacijski</a>
+                            </div>
+                            <div class="nav-link">
+                                <a href="era.html">ERA</a>
+                            </div>
+                        </div>
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form class="example" action="action_page.php" method="get">
+        <input id="search" type="search" placeholder="Pronađi..." name="search">
+        <button id="search_button" type="button"><i class="fa fa-search"></i></button>
+    </form>
+    <p id="noDataText" style="display: none;">Nema podataka</p>
+    <div class="video1">
+        <h1 class="searchByTitle">Corsair</h1>
+        <video width="100%" height="650" controls loop muted autoplay="autoplay"><source src="materijali/video1.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="video-sve">
+        <div class="video-2">
+            <h1 class="searchByTitle">Gaming highlights</h1>
+            <video width="500" height="500" controls src="materijali/video2.mp4"></video>
+        </div>
+        <div class="video-3">
+            <h1 class="searchByTitle">Review / Novo u svijetu</h1>
+            <video width="500" height="500" controls src="materijali/video3.mp4"> </video>
+        </div>
+        <div class="iframe-video1">
+            <h1 class="searchByTitle">PC novo od komponenti</h1>
+            <iframe src="https://www.youtube.com/embed/Ei3IuH8IZYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="iframe-video2">
+            <h1 class="searchByTitle">PC pametne spravice</h1>
+            <iframe src="https://www.youtube.com/embed/GEjya4OPqNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="audio-materijali">
+        <div class="audio1">
+            <h1 class="searchByTitle">Naslov 1</h1>
+            <audio controls>
+                <source src="materijali/audio1.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="audio1">
+            <h1 class="searchByTitle">Naslov 2</h1>
+            <audio controls>
+                <source src="materijali/audio2.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="audio1">
+            <h1 class="searchByTitle">Naslov 3</h1>
+            <audio controls>
+                <source src="materijali/audio3.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="audio1">
+            <h1 class="searchByTitle">Naslov 4</h1>
+            <audio controls>
+                <source src="materijali/audio4.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo-footer">
+            <img src="materijali/RPC-JP_Logo.png" alt="Logo">
+        </div>
+        <div class="footer-phone-hours">
+            <span class="phone">
+                555 555 5555
+            </span>
+            <span class="hours">
+                10am - jos si tu?
+            </span>
+        </div>
+        <div class="link">
+            <div class="nav-link">
+                <a href="index.html">Početna</a>
+            </div>
+            <div class="nav-link">
+                <a href="obrasci/Prijava.html">Prijava</a>
+            </div>
+            <div class="nav-link">
+                <a href="obrasci/registracija.html">Registracija</a>
+            </div>
+            <div class="nav-link">
+                <a href="obrasci/obrazac.html">Obrazac</a>
+            </div>
+            <div class="nav-link">
+                <a href="popis.html">Popis</a>
+            </div>
+        </div>
+        <div class="social-media-icon">
+            <a href="https://instagram.com/kvirko_svemirko"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="ikone-podnozje">
+            <div class="HTML5-validator">
+                <a href="https://validator.w3.org/nu/?doc=https://barka.foi.hr/WebDiP/2021/zadaca_01/kderek/multimedija.html" target="_blank"><img src="https://barka.foi.hr/WebDiP/2020/materijali/zadace/HTML5.png" alt="HTML5"></a>
+            </div>
+            <div class="CSS-validator">
+                <a href='http://jigsaw.w3.org/css-validator/validator?uri=https://barka.foi.hr/WebDiP/2021/zadaca_01/kderek/multimedija.html' target="_blank"><img src="https://barka.foi.hr/WebDiP/2020/materijali/zadace/CSS3.png" alt="HTML5"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2022  &#124; <a href="mailto:someone@yoursite.com">Kvirin Đerek</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js" integrity="sha256-xH4q8N0pEzrZMaRmd7gQVcTZiFei+HfRTBPJ1OGXC0k=" crossorigin="anonymous"></script>
+
+<script src="korime_jquery.js" type="text/javascript"></script>
